@@ -1,0 +1,358 @@
+
+/**************/
+/*** COLORS ***/
+/**************/
+
+// Apple palette
+// http://www.color-hex.com/color-palette/3598
+
+$black:        rgb(0,0,0)       // #000000
+$darkGray:     #333333          // rgb(51,​51,​51)
+$gray:         rgb(102,102,102) // #666666
+$lightGray:    rgb(151,151,151) // #979797
+$lighterGray:  rgb(238,238,238) // #eeeeee
+$backGray:     #fafafa
+$blue:         rgb(0,136,204)   // #0088cc
+
+// #ccc => footer font color
+// rgb(253,​216,53)
+// background-color: #fafafa
+
+
+
+/****************************/
+/*** FOUNDATION OVERWRITE ***/
+/****************************/
+
+h1, h2, h3, h4, h5, h6
+  color: inherit
+
+
+
+/****************************/
+/********** GLOBAL **********/
+/****************************/
+
+header.site
+  position: relative
+  //top: 0
+  //z-index: 10
+  width: 100%
+  height: 40px
+  background-color: rgba(0,0,0,0.8)
+  
+  // Desktop menu
+  .inline-list
+    margin-bottom: 0
+    display: inline-block
+    li
+      margin-top: 7px
+      margin-bottom: 7px
+    a, a:active, a:visited
+      color: white
+    a:hover
+      color: $blue
+
+  .right
+    text-align: right
+
+
+  // Mobile menu
+  .show-for-small
+
+    .close
+      nav
+        height: 40px
+        ul
+          display: none
+        
+    .open
+      nav
+        height: 100%
+        ul
+          display: block
+    
+    nav
+      position: fixed
+      top: 0
+      left: 0
+      z-index: 10
+      width: 100%
+      display: block
+      background-color: rgba(0, 0, 0, 0.9)
+      overflow: hidden
+
+      -webkit-transition: height 0.25s ease-in 0s
+      -moz-transition: height 0.25s ease-in 0s
+      -o-transition: height 0.25s ease-in 0s
+      transition: height 0.25s ease-in 0s
+      //@include transition(height 0.25s ease-in 0s)
+
+      & > a
+        position: absolute
+        top: 0
+        left: 0
+        display: block
+        padding: 10px
+        outline: none
+        i
+          font-size: 1.3em
+          color: white
+
+      ul.main-menu
+        padding: 60px 20px 0
+        list-style: none
+        li
+          padding: 10px 0
+          border-bottom: 1px solid $lighterGray
+        a, a:active, a:visited
+          color: white
+        a:hover
+          color: $blue
+      ul.inline-list
+        padding: 0 20px 
+
+
+footer.site
+  background-color: $darkGray
+  height: auto
+  padding: 40px 0 20px
+
+  .title
+    color: white
+
+  ul
+    margin: 0
+    padding: 20px 0 40px
+    border-bottom: 1px solid $gray
+    li
+      padding-right: 1.25em
+      padding-bottom: 0
+      &:first-child
+        padding-left: 0
+      &:last-child
+        a
+          border-right: none
+      a
+        display: block
+        color: white
+        border-right: 1px solid $gray
+        h5
+          margin-bottom: 5px
+          font-weight: normal
+    
+  small
+    color: #CCC     // one-off (marketing article)
+    display: block
+    font-size: 12px
+    padding: 25px 0
+
+
+ul.bullet-list
+  li
+    list-style: inside none none
+    padding-left: 20px
+    &:before
+      color: inherit
+      content: "·"
+      font-size: 25px
+      line-height: 22px
+      margin-left: -20px
+      padding-right: 15px
+      position: absolute
+      vertical-align: middle
+
+
+/****************************/
+/********* HOMEPAGE *********/
+/****************************/
+
+.homepage
+  article
+    margin: 40px 0 80px
+    
+    header
+      padding-bottom: 80px
+      padding: 40px 0
+      text-align: center
+      h1, h3
+        margin: 0
+
+    section
+      margin-bottom: 80px
+      h4
+        margin-bottom: 0.2em
+      a
+        color: inherit
+        outline: none
+      a:hover
+        h4, p
+          color: $blue
+
+
+
+
+/****************************/
+/********** PROJECTS ********/
+/****************************/
+
+.project
+
+  header.site
+    position: absolute
+    top: 0
+    left: 0
+    background-color: transparent
+
+
+  // Header & carousel
+  article
+    header
+      padding-top: 80px
+      min-height: 740px // adapt it window height!!!!!
+      border-bottom: 1px solid $gray
+      .title
+        text-align: center
+        color: white
+        h1, h2, h3, h4, h5, h6
+          margin-bottom: 0
+          color: inherit
+
+      // colors: https://www.google.com/design/spec/style/color.html#color-color-palette
+      &.indigo
+        background-color: #3f51b5
+      &.pink
+        background-color: #e91e63
+      &.teal
+        background-color: #009688
+      &.lime
+        background-color: #cddc39
+      &.green
+        background-color: #8bc34a
+      &.yellow
+        background-color: #ffeb3b
+      &.orange
+        background-color: #ff9800
+      &.grey
+        background-color: #607d8b
+      &.brown
+        background-color: #795548
+
+
+    &.chameleon
+      header
+        background-image: url(/images/chameleon/hero.png)
+        background-position: center bottom
+        background-repeat: no-repeat
+        background-size: 60% auto
+        background-attachment: scroll
+
+
+    .slideshow-wrapper
+      height: 460px
+
+    .orbit-container
+      background-color: transparent
+      .orbit-prev, .orbit-next
+        background-color: transparent
+        font-size: 180px
+        line-height: 0
+        margin-top: -40px
+        z-index: 5
+        span
+          position: relative
+          text-indent: 0 !important
+          border: none
+          &:before
+            font-family: "FontAwesome"
+            content: "\f104"
+            color: black
+            font-weight: lighter
+            color: $lighterGray
+            position: absolute
+        &:hover 
+          background-color: transparent
+          span:before
+            color: $gray
+      .orbit-next 
+        span
+          left: -5px
+          &:before
+            content: "\f105"
+
+      .orbit-timer,
+      .orbit-slide-number
+        display: none
+        z-index: 5
+      .orbit-bullets
+        text-align: center
+        li
+          display: inline-block
+          float: none
+          background-color: $lightGray
+          cursor: pointer
+          border: none
+        li.active, li:hover
+          background-color: $blue
+
+      .orbit-slides-container 
+        img
+          margin: 0 auto
+
+
+
+
+
+    // Sections
+    section
+      padding: 80px 0
+      border-bottom: 1px solid $lighterGray
+      &.gray
+        background-color: $backGray
+        //border-top: 1px solid $darkGray
+
+
+      .title
+        h3
+          margin-bottom: 0.75em
+
+      .orbit-container
+        background-color: transparent
+        .orbit-prev, .orbit-next,
+        .orbit-timer,
+        .orbit-slide-number
+          display: none
+        .orbit-bullets
+          text-align: center
+          li
+            display: inline-block
+            float: none
+            background-color: $lightGray
+            cursor: pointer
+            border: none
+          li.active, li:hover
+            background-color: $darkGray
+
+      .tech-list
+        li
+          display: inline-block
+          padding: 2px 8px
+          margin: 0 0.25em 0.25em 0
+          background: rgb(222, 224, 229)
+          border-radius: 10px
+
+      .team-list
+        list-style: none
+        li
+          margin-bottom: 10px
+          span
+            display: block
+            font-size: 14px
+            line-height: 14px
+
+
+
+      .block-grid
+        li
+          padding: 0 0.625em 0.25em
+
