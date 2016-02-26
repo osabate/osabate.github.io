@@ -1,21 +1,5 @@
 
-
-export GEM_PATH=/Library/Ruby/Gems/2.0.0/:${GEM_PATH}
-
-
-/Users/oriolsabate/.rvm/gems/ruby-2.0.0-p481
-
-
-export GEM_PATH=/Users/oriolsabate/.rvm/gems/ruby-2.0.0-p481/:${GEM_PATH}
-
-
-# RVM
-rvm 1.25.28 (stable) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
-
-# RUBY
-ruby-2.0.0-p481 [ x86_64 ]
-
-
+# Environment Setup
 
 - RUBYGEMS VERSION: 2.2.2
 - RUBY VERSION: 2.0.0 (2014-05-08 patchlevel 481) [x86_64-darwin13.1.0]
@@ -53,7 +37,7 @@ ruby-2.0.0-p481 [ x86_64 ]
 
 
 
-# RVM
+# RVM reference
 
 rvm gemdir
 
@@ -66,25 +50,13 @@ rvm @global do gem list
 Use `bundle show [gemname]` to see where a bundled gem is installed.
 
 
-# Others
+# GEM reference
 
 gem env
 
 
-# Help
+# Middleman reference
 
 https://forum.middlemanapp.com/
-
-
-# Middleman 4
-
-http://willschenk.com/tags/middleman/
-
-http://willschenk.com/building-sites-with-middleman/
-
-
-
-
-
 
 
