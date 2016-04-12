@@ -13,7 +13,7 @@
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     %link{:href => "apple-touch-icon.png", :rel => "apple-touch-icon"}/
     /%script{:src => "js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"}
-    = javascript_include_tag "vendor/modernizr-2.5.3.min"
+    = javascript_include_tag "vendor/modernizr-2.8.3.min"
     = stylesheet_link_tag "main"
   %body{:class => data.page.page_class }
     /[if lt IE 8] <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -22,24 +22,24 @@
         %nav.large-6.column
           %ul.inline-list
             %li
-              %a{:href => "index.html"} home
+              %a{:href => "/index.html"} home
             %li
-              %a{:href => "#"} about
+              %a{:href => "/about.html"} about
             %li
-              %a{:href => "#"} contact
+              %a{:href => "mailto:oriolsabate@gmail.com"} contact
         %nav.large-6.column.right
           %ul.inline-list
             %li
-              %a{:href => "#"}
+              %a{:href => "https://www.linkedin.com/in/oriolsabate", :target => "_blank"}
                 %i.fa.fa-linkedin
             %li
-              %a{:href => "#"}
+              %a{:href => "https://twitter.com/orioltweet", :target => "_blank"}
                 %i.fa.fa-twitter
             %li
-              %a{:href => "#"}
+              %a{:href => "https://github.com/osabate", :target => "_blank"}
                 %i.fa.fa-github
             %li
-              %a{:href => "#"}
+              %a{:href => "http://stackoverflow.com/users/2817112/oriol", :target => "_blank"}
                 %i.fa.fa-stack-overflow
       
       .row.show-for-small
@@ -49,23 +49,23 @@
               %i.fa.fa-bars
             %ul.main-menu
               %li
-                %a{:href => "#"} home
+                %a{:href => "/index.html"} home
               %li
-                %a{:href => "#"} about
+                %a{:href => "/about.html"} about
               %li
-                %a{:href => "#"} contact
+                %a{:href => "mailto:oriolsabate@gmail.com"} contact
             %ul.inline-list
               %li
-                %a{:href => "#"}
+                %a{:href => "https://www.linkedin.com/in/oriolsabate", :target => "_blank"}
                   %i.fa.fa-linkedin
               %li
-                %a{:href => "#"}
+                %a{:href => "https://twitter.com/orioltweet", :target => "_blank"}
                   %i.fa.fa-twitter
               %li
-                %a{:href => "#"}
+                %a{:href => "https://github.com/osabate", :target => "_blank"}
                   %i.fa.fa-github
               %li
-                %a{:href => "#"}
+                %a{:href => "http://stackoverflow.com/users/2817112/oriol", :target => "_blank"}
                   %i.fa.fa-stack-overflow
 
 

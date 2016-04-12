@@ -34,6 +34,42 @@ $(document).foundation('orbit', {
 
 $(function() {
 
+	// Global vars
+	var intervalID = null;
+
+	// Project pages
+	$(window).on('resize load', function(e) {
+
+		console.log('called!! ' + e.type);
+
+		if (intervalID !== null) {
+			return;
+		}
+		// if (e.type === 'load') {
+		// 	$('body').css('display','none');
+		// }
+
+		intervalID = setInterval(function() {
+
+			var winHeight = window.innerHeight; //viewport size instead
+			//var winWidth = window.innerWidth;
+
+			console.log('resize me to ' + winHeight);
+
+			$('#hero').css('height', winHeight);
+			
+			$('body').removeClass("hide");
+
+
+			clearInterval(intervalID);
+			intervalID = null;
+
+		}, 250);
+
+	});
+
+
+
 
 	// Mobile Menu
 	$('#menu-icon').click(function() {

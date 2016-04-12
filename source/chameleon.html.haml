@@ -1,27 +1,27 @@
 ---
 title: Project Name
-page_class: project
+page_class: project hide
 article_class: chameleon
 ---
 
-%header.teal
+%header#hero.teal
 	.row
 		.large-12.column.title
 			%h1 Offers Web Application
-			%h4 Front-End Software Engineer
+			%h4.subheader Front-End Software Engineer
 
 
 %section.gray
 	.row
-		.large-5.column
+		.large-5.column.title
 			%h3 Challange
 			%p
-				Extending an existing Groupon-style syndicated commerce application that would provide configurable white-label capabilities, such as: content management, targeting, delivery, merchandising, transaction, operations and data. 
-				This solution was made to run branded end-to-end (voucher-based and card-linked promotions) for any business to their end consumers.
-				We made it available via RESTful APIs and accessible to multiple devices.
+				This project consisted in extending an existing Groupon-style syndicated commerce application that would provide configurable white-label capabilities, such as: content management, targeting, delivery, merchandising, transaction, operations and data. 
+				This solution would run branded end-to-end for any business to their end consumers.
+				And as a true modern application, deal content would be made accessible to multiple partners and interfaces through RESTful APIs.
 
 
-		.large-2.column.large-offset-1
+		.large-2.column.large-offset-1.title
 			%h3 Technologies
 			%ul.tech-list
 				%li HAML
@@ -33,7 +33,7 @@ article_class: chameleon
 				%li Git
 
 
-		.large-3.column.large-offset-1
+		.large-3.column.large-offset-1.title
 			%h3 Team
 			%ul.team-list
 				%li
@@ -63,11 +63,14 @@ article_class: chameleon
 		.large-6.column
 			%ul.bullet-list
 				%li
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Define custom UI touch-points and flexible framework for interface design: Basic logo, branding, color configuration from roughly 10-20 deploy-time settings, which affects web, mobile web, and email experiences.
 				%li
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Build simple request middleware to detect domain and load appropriate configuration
 				%li
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Ability to suck deal content into existing site via RESTful API
+				%li
+					Automate onboarding process. Cheaper and 10x faster than manual configuration.
+
 
 		.large-6.column
 			%ul{"data-orbit" => ""}
@@ -87,11 +90,14 @@ article_class: chameleon
 		.large-6.column
 			%ul.bullet-list
 				%li
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Make It Easy – Intuitive, Flexible, Empowering
 				%li
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Be Consistent – Program Branding, Service Standards, Quality, Privacy, Permission
 				%li
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Deliver on the Customer Promise
+				%li
+					Engage – Compelling Content, Relevant & Personalized, Customer Dialogue (feedback/rewards/recognition)
+
 
 		.large-6.column
 			%ul{"data-orbit" => ""}
@@ -109,13 +115,18 @@ article_class: chameleon
 			%h3 Implementation
 	.row
 		.large-6.column
-			%ul
+			%ul.bullet-list
 				%li
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Leverage front-end frameworks and pre-compilers for fast UI development: jQuery, Foundation CSS, Haml, Sass, Coffeescript.
 				%li
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Ruby on Rails stack for modern web application development.
 				%li
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					Versioning with git & github
+				%li
+					Testing with Rspec and Cucumber
+				%li
+					Deployment with Jenkins [link] and Heroku [link]
+
 
 		.large-6.column
 			%ul{"data-orbit" => ""}
@@ -127,29 +138,38 @@ article_class: chameleon
 					%img{:src => "http://lorempixel.com/400/300/"}
 
 
-%section
+%section.outcome
 	.row
 		.large-12.column.title
 			%h3 Success Factors
 
 	.row
-		.large-6.column
-			%ul
-				%li
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				%li
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-				%li
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		.large-4.column
+			%ul.bullet-list
+				%li Low cost implementation due to lack of upfront development work. 
+				%li Higher deal/offer conversion rates.
+				%li Branded and custom deals provided.
+				%li Ability to suck deal content into different partner Apps via RESTful API.
+				
 
-		.large-6.column
-			%ul{"data-orbit" => ""}
+
+		.large-6.column.large-offset-2
+			%ul.large-block-grid-2.data-sets
 				%li
-					%img{:src => "http://lorempixel.com/400/300/"}
+					%span.stat
+						$50k
+					%span
+						per partner configuration
 				%li
-					%img{:src => "http://lorempixel.com/400/300/"}
+					%span.stat
+						&#46;25%
+					%span
+						higher conversion rates  
 				%li
-					%img{:src => "http://lorempixel.com/400/300/"}
+					%span.stat
+						API
+					%span
+						for easy implementation
 		
 
 %footer.site

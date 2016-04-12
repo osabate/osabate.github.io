@@ -33,6 +33,11 @@ h1, h2, h3, h4, h5, h6
 /********** GLOBAL **********/
 /****************************/
 
+// Progressive enhancement on project pages
+.no-js body.hide
+  display: block !important
+
+
 header.site
   position: relative
   //top: 0
@@ -209,8 +214,25 @@ ul.bullet-list
   article
     header
       padding-top: 80px
-      min-height: 740px // adapt it window height!!!!!
+      min-height: 740px // desktop & big screens
       border-bottom: 1px solid $gray
+
+
+      // Tablet
+      @media only screen and (min-width: 768px) and (max-width: 1024px)
+        min-height: 580px  
+
+      // Big Mobile
+      @media only screen and (min-width: 480px ) and (max-width: 767px)
+        min-height: 420px
+        max-height: 480px
+
+      // Small Mobile
+      @media only screen and (max-width: 479px)
+        min-height: 330px
+        max-height: 360px
+    
+
       .title
         text-align: center
         color: white
@@ -246,6 +268,11 @@ ul.bullet-list
         background-repeat: no-repeat
         background-size: 60% auto
         background-attachment: scroll
+
+      section.outcome
+        background-color: #e0f2f1
+        .stat
+          color: #009688
 
 
     .slideshow-wrapper
@@ -305,7 +332,8 @@ ul.bullet-list
 
     // Sections
     section
-      padding: 80px 0
+      min-height: 425px // set different min-height for tablet & mobile devices
+      padding: 5em 0
       border-bottom: 1px solid $lighterGray
       &.gray
         background-color: $backGray
@@ -314,7 +342,7 @@ ul.bullet-list
 
       .title
         h3
-          margin-bottom: 0.75em
+          margin-bottom: 1em
 
       .orbit-container
         background-color: transparent
@@ -350,9 +378,21 @@ ul.bullet-list
             font-size: 14px
             line-height: 14px
 
-
-
       .block-grid
         li
           padding: 0 0.625em 0.25em
+
+
+
+      &.outcome
+        .data-sets
+          li
+            margin-bottom: 1em
+        .stat
+          display: block
+          font-size: 72px
+          font-weight: normal
+          line-height: 80px
+
+
 
