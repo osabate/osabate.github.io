@@ -25,6 +25,8 @@
 # end
 
 page "/*", :layout => "standard"
+page "/index.html", :layout => "homepage"
+
 
 # Proxy pages (https://middlemanapp.com/advanced/dynamic_pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
