@@ -76,7 +76,7 @@ configure :build do
   activate :relative_assets
 
   # Compress Images
-  activate :imageoptim
+  #activate :imageoptim
 
   # Minify HTML
   activate :minify_html
