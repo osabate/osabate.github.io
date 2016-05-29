@@ -25,4 +25,4 @@
 technical-questions.html
 
 # Ignore local help file
-HELP.md
+/HELP.md
