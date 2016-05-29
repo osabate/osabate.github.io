@@ -22,6 +22,7 @@
 
 # Ignore assets (for now)
 /assets
+technical-questions.html
 
 # Ignore local help file
 HELP.md
